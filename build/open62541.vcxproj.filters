@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\SPB_Data\open62541\build\open62541-object.dir\$(Configuration)\open62541.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{A7E6DA9A-4C1B-3D98-99FB-91A9703C09F6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

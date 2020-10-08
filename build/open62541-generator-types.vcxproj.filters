@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\f045059edfd777950c20dd2fa870e0b7\types_generated.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\1dd743bccdb298db2d75a6f71cd615c9\open62541-generator-types.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\SPB_Data\open62541\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\SPB_Data\open62541\build\CMakeFiles\open62541-generator-types" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{98D4DDE3-E8AA-3E90-8BD7-500609D3E4AB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

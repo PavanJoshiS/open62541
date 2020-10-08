@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D9164A52-3DE8-390F-9F98-1F08CA1A061A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>open62541-generator-transport</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\f045059edfd777950c20dd2fa870e0b7\transport_generated.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating src_generated/open62541/transport_generated.c, src_generated/open62541/transport_generated.h, src_generated/open62541/transport_generated_handling.h, src_generated/open62541/transport_generated_encoding_binary.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/generate_datatypes.py --selected-types=C:/SPB_Data/open62541/tools/schema/datatypes_transport.txt --type-bsd=C:/SPB_Data/open62541/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/SPB_Data/open62541/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/SPB_Data/open62541/deps/ua-nodeset/Schema/NodeIds.csv --no-builtin --internal C:/SPB_Data/open62541/build/src_generated/open62541/transport
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\generate_datatypes.py;C:\SPB_Data\open62541\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\SPB_Data\open62541\deps\ua-nodeset\Schema\NodeIds.csv;C:\SPB_Data\open62541\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.c;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_handling.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_encoding_binary.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating src_generated/open62541/transport_generated.c, src_generated/open62541/transport_generated.h, src_generated/open62541/transport_generated_handling.h, src_generated/open62541/transport_generated_encoding_binary.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/generate_datatypes.py --selected-types=C:/SPB_Data/open62541/tools/schema/datatypes_transport.txt --type-bsd=C:/SPB_Data/open62541/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/SPB_Data/open62541/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/SPB_Data/open62541/deps/ua-nodeset/Schema/NodeIds.csv --no-builtin --internal C:/SPB_Data/open62541/build/src_generated/open62541/transport
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\generate_datatypes.py;C:\SPB_Data\open62541\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\SPB_Data\open62541\deps\ua-nodeset\Schema\NodeIds.csv;C:\SPB_Data\open62541\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.c;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_handling.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_encoding_binary.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating src_generated/open62541/transport_generated.c, src_generated/open62541/transport_generated.h, src_generated/open62541/transport_generated_handling.h, src_generated/open62541/transport_generated_encoding_binary.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/generate_datatypes.py --selected-types=C:/SPB_Data/open62541/tools/schema/datatypes_transport.txt --type-bsd=C:/SPB_Data/open62541/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/SPB_Data/open62541/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/SPB_Data/open62541/deps/ua-nodeset/Schema/NodeIds.csv --no-builtin --internal C:/SPB_Data/open62541/build/src_generated/open62541/transport
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\generate_datatypes.py;C:\SPB_Data\open62541\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\SPB_Data\open62541\deps\ua-nodeset\Schema\NodeIds.csv;C:\SPB_Data\open62541\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.c;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_handling.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_encoding_binary.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating src_generated/open62541/transport_generated.c, src_generated/open62541/transport_generated.h, src_generated/open62541/transport_generated_handling.h, src_generated/open62541/transport_generated_encoding_binary.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/generate_datatypes.py --selected-types=C:/SPB_Data/open62541/tools/schema/datatypes_transport.txt --type-bsd=C:/SPB_Data/open62541/tools/schema/Custom.Opc.Ua.Transport.bsd --import=TYPES#C:/SPB_Data/open62541/deps/ua-nodeset/Schema/Opc.Ua.Types.bsd --type-csv=C:/SPB_Data/open62541/deps/ua-nodeset/Schema/NodeIds.csv --no-builtin --internal C:/SPB_Data/open62541/build/src_generated/open62541/transport
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\generate_datatypes.py;C:\SPB_Data\open62541\tools\schema\Custom.Opc.Ua.Transport.bsd;C:\SPB_Data\open62541\deps\ua-nodeset\Schema\NodeIds.csv;C:\SPB_Data\open62541\tools\schema\datatypes_transport.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.c;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_handling.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_encoding_binary.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\1dd743bccdb298db2d75a6f71cd615c9\open62541-generator-transport.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.c;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_handling.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_encoding_binary.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\CMakeFiles\open62541-generator-transport</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.c;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_handling.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_encoding_binary.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\CMakeFiles\open62541-generator-transport</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.c;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_handling.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_encoding_binary.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\CMakeFiles\open62541-generator-transport</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.c;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_handling.h;C:\SPB_Data\open62541\build\src_generated\open62541\transport_generated_encoding_binary.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\CMakeFiles\open62541-generator-transport</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/SPB_Data/open62541/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/SPB_Data/open62541 -BC:/SPB_Data/open62541/build --check-stamp-file C:/SPB_Data/open62541/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeCCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeSystem.cmake;C:\SPB_Data\open62541\include\open62541\config.h.in;C:\SPB_Data\open62541\open62541.pc.in;C:\SPB_Data\open62541\tools\cmake\AssignSourceGroup.cmake;C:\SPB_Data\open62541\tools\cmake\FindClangTools.cmake;C:\SPB_Data\open62541\tools\cmake\SetGitBasedVersion.cmake;C:\SPB_Data\open62541\tools\cmake\linting_build.cmake;C:\SPB_Data\open62541\tools\cmake\linting_target.cmake;C:\SPB_Data\open62541\tools\cmake\macros_internal.cmake;C:\SPB_Data\open62541\tools\cmake\macros_public.cmake;C:\SPB_Data\open62541\tools\cmake\open62541Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/SPB_Data/open62541/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/SPB_Data/open62541 -BC:/SPB_Data/open62541/build --check-stamp-file C:/SPB_Data/open62541/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeCCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeSystem.cmake;C:\SPB_Data\open62541\include\open62541\config.h.in;C:\SPB_Data\open62541\open62541.pc.in;C:\SPB_Data\open62541\tools\cmake\AssignSourceGroup.cmake;C:\SPB_Data\open62541\tools\cmake\FindClangTools.cmake;C:\SPB_Data\open62541\tools\cmake\SetGitBasedVersion.cmake;C:\SPB_Data\open62541\tools\cmake\linting_build.cmake;C:\SPB_Data\open62541\tools\cmake\linting_target.cmake;C:\SPB_Data\open62541\tools\cmake\macros_internal.cmake;C:\SPB_Data\open62541\tools\cmake\macros_public.cmake;C:\SPB_Data\open62541\tools\cmake\open62541Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/SPB_Data/open62541/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/SPB_Data/open62541 -BC:/SPB_Data/open62541/build --check-stamp-file C:/SPB_Data/open62541/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeCCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeSystem.cmake;C:\SPB_Data\open62541\include\open62541\config.h.in;C:\SPB_Data\open62541\open62541.pc.in;C:\SPB_Data\open62541\tools\cmake\AssignSourceGroup.cmake;C:\SPB_Data\open62541\tools\cmake\FindClangTools.cmake;C:\SPB_Data\open62541\tools\cmake\SetGitBasedVersion.cmake;C:\SPB_Data\open62541\tools\cmake\linting_build.cmake;C:\SPB_Data\open62541\tools\cmake\linting_target.cmake;C:\SPB_Data\open62541\tools\cmake\macros_internal.cmake;C:\SPB_Data\open62541\tools\cmake\macros_public.cmake;C:\SPB_Data\open62541\tools\cmake\open62541Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/SPB_Data/open62541/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/SPB_Data/open62541 -BC:/SPB_Data/open62541/build --check-stamp-file C:/SPB_Data/open62541/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\WriteBasicConfigVersionFile.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeCCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;C:\SPB_Data\open62541\build\CMakeFiles\3.18.3\CMakeSystem.cmake;C:\SPB_Data\open62541\include\open62541\config.h.in;C:\SPB_Data\open62541\open62541.pc.in;C:\SPB_Data\open62541\tools\cmake\AssignSourceGroup.cmake;C:\SPB_Data\open62541\tools\cmake\FindClangTools.cmake;C:\SPB_Data\open62541\tools\cmake\SetGitBasedVersion.cmake;C:\SPB_Data\open62541\tools\cmake\linting_build.cmake;C:\SPB_Data\open62541\tools\cmake\linting_target.cmake;C:\SPB_Data\open62541\tools\cmake\macros_internal.cmake;C:\SPB_Data\open62541\tools\cmake\macros_public.cmake;C:\SPB_Data\open62541\tools\cmake\open62541Config.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\SPB_Data\open62541\build\CMakeFiles\open62541-generator-transport">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\SPB_Data\open62541\build\ZERO_CHECK.vcxproj">
+      <Project>{33951809-BA2D-3999-B360-5B82E40C0CAB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

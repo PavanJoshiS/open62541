@@ -1,0 +1,1803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{20AA2D13-7202-34F5-8F96-904BE8BA63E9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>doc_latex</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\types.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/types.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/types.h C:/SPB_Data/open62541/build/doc_src/types.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\types.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\types.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/types.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/types.h C:/SPB_Data/open62541/build/doc_src/types.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\types.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\types.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/types.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/types.h C:/SPB_Data/open62541/build/doc_src/types.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\types.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\types.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/types.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/types.h C:/SPB_Data/open62541/build/doc_src/types.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\types.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\types.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\common.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/common.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/common.h C:/SPB_Data/open62541/build/doc_src/common.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\common.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\common.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/common.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/common.h C:/SPB_Data/open62541/build/doc_src/common.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\common.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\common.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/common.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/common.h C:/SPB_Data/open62541/build/doc_src/common.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\common.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\common.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/common.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/common.h C:/SPB_Data/open62541/build/doc_src/common.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\common.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\common.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\util.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/util.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/util.h C:/SPB_Data/open62541/build/doc_src/util.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\util.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\util.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/util.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/util.h C:/SPB_Data/open62541/build/doc_src/util.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\util.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\util.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/util.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/util.h C:/SPB_Data/open62541/build/doc_src/util.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\util.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\util.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/util.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/util.h C:/SPB_Data/open62541/build/doc_src/util.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\util.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\util.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\statuscodes.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/statuscodes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/build/src_generated/open62541/statuscodes.h C:/SPB_Data/open62541/build/doc_src/statuscodes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\build\src_generated\open62541\statuscodes.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\statuscodes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/statuscodes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/build/src_generated/open62541/statuscodes.h C:/SPB_Data/open62541/build/doc_src/statuscodes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\build\src_generated\open62541\statuscodes.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\statuscodes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/statuscodes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/build/src_generated/open62541/statuscodes.h C:/SPB_Data/open62541/build/doc_src/statuscodes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\build\src_generated\open62541\statuscodes.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\statuscodes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/statuscodes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/build/src_generated/open62541/statuscodes.h C:/SPB_Data/open62541/build/doc_src/statuscodes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\build\src_generated\open62541\statuscodes.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\statuscodes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\types_generated.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/types_generated.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/build/src_generated/open62541/types_generated.h C:/SPB_Data/open62541/build/doc_src/types_generated.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\build\src_generated\open62541\types_generated.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\types_generated.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/types_generated.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/build/src_generated/open62541/types_generated.h C:/SPB_Data/open62541/build/doc_src/types_generated.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\build\src_generated\open62541\types_generated.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\types_generated.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/types_generated.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/build/src_generated/open62541/types_generated.h C:/SPB_Data/open62541/build/doc_src/types_generated.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\build\src_generated\open62541\types_generated.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\types_generated.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/types_generated.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/build/src_generated/open62541/types_generated.h C:/SPB_Data/open62541/build/doc_src/types_generated.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\build\src_generated\open62541\types_generated.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\types_generated.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\server.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/server.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/server.h C:/SPB_Data/open62541/build/doc_src/server.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\server.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\server.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/server.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/server.h C:/SPB_Data/open62541/build/doc_src/server.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\server.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\server.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/server.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/server.h C:/SPB_Data/open62541/build/doc_src/server.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\server.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\server.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/server.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/server.h C:/SPB_Data/open62541/build/doc_src/server.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\server.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\server.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\client_subscriptions.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/client_subscriptions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client_subscriptions.h C:/SPB_Data/open62541/build/doc_src/client_subscriptions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client_subscriptions.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\client_subscriptions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/client_subscriptions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client_subscriptions.h C:/SPB_Data/open62541/build/doc_src/client_subscriptions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client_subscriptions.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\client_subscriptions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/client_subscriptions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client_subscriptions.h C:/SPB_Data/open62541/build/doc_src/client_subscriptions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client_subscriptions.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\client_subscriptions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/client_subscriptions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client_subscriptions.h C:/SPB_Data/open62541/build/doc_src/client_subscriptions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client_subscriptions.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\client_subscriptions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\client.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/client.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client.h C:/SPB_Data/open62541/build/doc_src/client.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\client.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/client.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client.h C:/SPB_Data/open62541/build/doc_src/client.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\client.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/client.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client.h C:/SPB_Data/open62541/build/doc_src/client.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\client.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/client.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client.h C:/SPB_Data/open62541/build/doc_src/client.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\client.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\client_highlevel.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/client_highlevel.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client_highlevel.h C:/SPB_Data/open62541/build/doc_src/client_highlevel.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client_highlevel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\client_highlevel.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/client_highlevel.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client_highlevel.h C:/SPB_Data/open62541/build/doc_src/client_highlevel.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client_highlevel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\client_highlevel.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/client_highlevel.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client_highlevel.h C:/SPB_Data/open62541/build/doc_src/client_highlevel.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client_highlevel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\client_highlevel.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/client_highlevel.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/client_highlevel.h C:/SPB_Data/open62541/build/doc_src/client_highlevel.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\client_highlevel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\client_highlevel.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\plugin_log.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/plugin_log.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/log.h C:/SPB_Data/open62541/build/doc_src/plugin_log.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\log.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_log.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/plugin_log.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/log.h C:/SPB_Data/open62541/build/doc_src/plugin_log.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\log.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_log.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/plugin_log.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/log.h C:/SPB_Data/open62541/build/doc_src/plugin_log.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\log.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_log.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/plugin_log.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/log.h C:/SPB_Data/open62541/build/doc_src/plugin_log.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\log.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_log.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\plugin_network.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/plugin_network.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/network.h C:/SPB_Data/open62541/build/doc_src/plugin_network.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\network.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_network.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/plugin_network.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/network.h C:/SPB_Data/open62541/build/doc_src/plugin_network.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\network.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_network.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/plugin_network.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/network.h C:/SPB_Data/open62541/build/doc_src/plugin_network.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\network.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_network.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/plugin_network.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/network.h C:/SPB_Data/open62541/build/doc_src/plugin_network.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\network.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_network.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\plugin_accesscontrol.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/plugin_accesscontrol.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/accesscontrol.h C:/SPB_Data/open62541/build/doc_src/plugin_accesscontrol.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\accesscontrol.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_accesscontrol.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/plugin_accesscontrol.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/accesscontrol.h C:/SPB_Data/open62541/build/doc_src/plugin_accesscontrol.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\accesscontrol.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_accesscontrol.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/plugin_accesscontrol.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/accesscontrol.h C:/SPB_Data/open62541/build/doc_src/plugin_accesscontrol.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\accesscontrol.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_accesscontrol.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/plugin_accesscontrol.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/accesscontrol.h C:/SPB_Data/open62541/build/doc_src/plugin_accesscontrol.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\accesscontrol.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_accesscontrol.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\services.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/services.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/src/server/ua_services.h C:/SPB_Data/open62541/build/doc_src/services.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\src\server\ua_services.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\services.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/services.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/src/server/ua_services.h C:/SPB_Data/open62541/build/doc_src/services.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\src\server\ua_services.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\services.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/services.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/src/server/ua_services.h C:/SPB_Data/open62541/build/doc_src/services.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\src\server\ua_services.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\services.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/services.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/src/server/ua_services.h C:/SPB_Data/open62541/build/doc_src/services.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\src\server\ua_services.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\services.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\nodestore.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/nodestore.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/nodestore.h C:/SPB_Data/open62541/build/doc_src/nodestore.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\nodestore.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\nodestore.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/nodestore.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/nodestore.h C:/SPB_Data/open62541/build/doc_src/nodestore.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\nodestore.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\nodestore.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/nodestore.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/nodestore.h C:/SPB_Data/open62541/build/doc_src/nodestore.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\nodestore.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\nodestore.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/nodestore.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/nodestore.h C:/SPB_Data/open62541/build/doc_src/nodestore.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\nodestore.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\nodestore.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\plugin_pubsub_connection.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/plugin_pubsub_connection.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/pubsub.h C:/SPB_Data/open62541/build/doc_src/plugin_pubsub_connection.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_pubsub_connection.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/plugin_pubsub_connection.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/pubsub.h C:/SPB_Data/open62541/build/doc_src/plugin_pubsub_connection.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_pubsub_connection.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/plugin_pubsub_connection.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/pubsub.h C:/SPB_Data/open62541/build/doc_src/plugin_pubsub_connection.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_pubsub_connection.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/plugin_pubsub_connection.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/plugin/pubsub.h C:/SPB_Data/open62541/build/doc_src/plugin_pubsub_connection.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\plugin\pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\plugin_pubsub_connection.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\pubsub.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/pubsub.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/server_pubsub.h C:/SPB_Data/open62541/build/doc_src/pubsub.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\server_pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\pubsub.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/pubsub.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/server_pubsub.h C:/SPB_Data/open62541/build/doc_src/pubsub.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\server_pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\pubsub.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/pubsub.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/server_pubsub.h C:/SPB_Data/open62541/build/doc_src/pubsub.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\server_pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\pubsub.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/pubsub.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/include/open62541/server_pubsub.h C:/SPB_Data/open62541/build/doc_src/pubsub.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\include\open62541\server_pubsub.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\pubsub.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_datatypes.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_datatypes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_datatypes.c C:/SPB_Data/open62541/build/doc_src/tutorial_datatypes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_datatypes.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_datatypes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_datatypes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_datatypes.c C:/SPB_Data/open62541/build/doc_src/tutorial_datatypes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_datatypes.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_datatypes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_datatypes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_datatypes.c C:/SPB_Data/open62541/build/doc_src/tutorial_datatypes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_datatypes.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_datatypes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_datatypes.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_datatypes.c C:/SPB_Data/open62541/build/doc_src/tutorial_datatypes.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_datatypes.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_datatypes.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_server_firststeps.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_firststeps.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_firststeps.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_firststeps.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_firststeps.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_server_variable.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_variable.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_variable.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_variable.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_variable.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_variable.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_variable.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_variable.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_variable.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_variable.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_variable.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_variable.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_variable.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_variable.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_variable.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_variable.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_variable.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_variable.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_variable.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_variable.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_variable.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_server_variabletype.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_variabletype.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_variabletype.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_variabletype.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_variabletype.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_variabletype.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_variabletype.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_variabletype.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_variabletype.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_variabletype.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_variabletype.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_variabletype.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_variabletype.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_variabletype.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_variabletype.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_variabletype.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_variabletype.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_variabletype.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_variabletype.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_variabletype.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_variabletype.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_server_datasource.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_datasource.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_datasource.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_datasource.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_datasource.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_datasource.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_datasource.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_datasource.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_datasource.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_datasource.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_datasource.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_datasource.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_datasource.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_datasource.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_datasource.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_datasource.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_datasource.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_datasource.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_datasource.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_datasource.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_datasource.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_server_events.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_events.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_events.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_events.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_events.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_events.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_events.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_events.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_events.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_events.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_events.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_events.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_events.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_events.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_events.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_events.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_events.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_events.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_events.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_events.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_events.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_server_alarms_conditions.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_alarms_conditions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_alarms_conditions.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_alarms_conditions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_alarms_conditions.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_alarms_conditions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_alarms_conditions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_alarms_conditions.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_alarms_conditions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_alarms_conditions.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_alarms_conditions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_alarms_conditions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_alarms_conditions.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_alarms_conditions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_alarms_conditions.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_alarms_conditions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_alarms_conditions.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_alarms_conditions.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_alarms_conditions.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_alarms_conditions.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_alarms_conditions.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_server_monitoreditems.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_monitoreditems.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_monitoreditems.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_monitoreditems.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_monitoreditems.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_monitoreditems.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_monitoreditems.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_monitoreditems.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_monitoreditems.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_monitoreditems.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_monitoreditems.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_monitoreditems.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_monitoreditems.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_monitoreditems.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_monitoreditems.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_monitoreditems.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_monitoreditems.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_monitoreditems.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_monitoreditems.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_monitoreditems.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_monitoreditems.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_server_object.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_object.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_object.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_object.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_object.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_object.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_object.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_object.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_object.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_object.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_object.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_object.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_object.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_object.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_object.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_object.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_object.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_object.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_object.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_object.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_object.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_server_method.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_server_method.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_method.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_method.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_method.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_method.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_server_method.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_method.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_method.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_method.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_method.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_server_method.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_method.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_method.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_method.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_method.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_server_method.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_server_method.c C:/SPB_Data/open62541/build/doc_src/tutorial_server_method.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_server_method.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_server_method.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_client_firststeps.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_client_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_client_firststeps.c C:/SPB_Data/open62541/build/doc_src/tutorial_client_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_client_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_client_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_client_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_client_firststeps.c C:/SPB_Data/open62541/build/doc_src/tutorial_client_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_client_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_client_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_client_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_client_firststeps.c C:/SPB_Data/open62541/build/doc_src/tutorial_client_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_client_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_client_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_client_firststeps.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/tutorial_client_firststeps.c C:/SPB_Data/open62541/build/doc_src/tutorial_client_firststeps.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\tutorial_client_firststeps.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_client_firststeps.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\75729ab5276fc17a74abec7ef5193f19\tutorial_pubsub_publish.rst.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating ../doc_src/tutorial_pubsub_publish.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/pubsub/tutorial_pubsub_publish.c C:/SPB_Data/open62541/build/doc_src/tutorial_pubsub_publish.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\pubsub\tutorial_pubsub_publish.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_pubsub_publish.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating ../doc_src/tutorial_pubsub_publish.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/pubsub/tutorial_pubsub_publish.c C:/SPB_Data/open62541/build/doc_src/tutorial_pubsub_publish.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\pubsub\tutorial_pubsub_publish.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_pubsub_publish.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Generating ../doc_src/tutorial_pubsub_publish.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/pubsub/tutorial_pubsub_publish.c C:/SPB_Data/open62541/build/doc_src/tutorial_pubsub_publish.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\pubsub\tutorial_pubsub_publish.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_pubsub_publish.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Generating ../doc_src/tutorial_pubsub_publish.rst</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\Pavan-Kumar\AppData\Local\Programs\Python\Python35\python.exe C:/SPB_Data/open62541/tools/c2rst.py C:/SPB_Data/open62541/examples/pubsub/tutorial_pubsub_publish.c C:/SPB_Data/open62541/build/doc_src/tutorial_pubsub_publish.rst
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\tools\c2rst.py;C:\SPB_Data\open62541\examples\pubsub\tutorial_pubsub_publish.c;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\tutorial_pubsub_publish.rst</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\build\CMakeFiles\503217ed7efd9d7a9ca5bf7d37eebe39\doc_latex.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building LaTeX sources for documentation with Sphinx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+SPHINX_EXECUTABLE-NOTFOUND -b latex C:/SPB_Data/open62541/build/doc_src C:/SPB_Data/open62541/build/doc_latex
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc_src\types.rst;C:\SPB_Data\open62541\build\doc_src\common.rst;C:\SPB_Data\open62541\build\doc_src\util.rst;C:\SPB_Data\open62541\build\doc_src\statuscodes.rst;C:\SPB_Data\open62541\build\doc_src\types_generated.rst;C:\SPB_Data\open62541\build\doc_src\server.rst;C:\SPB_Data\open62541\build\doc_src\client_subscriptions.rst;C:\SPB_Data\open62541\build\doc_src\client.rst;C:\SPB_Data\open62541\build\doc_src\client_highlevel.rst;C:\SPB_Data\open62541\build\doc_src\plugin_log.rst;C:\SPB_Data\open62541\build\doc_src\plugin_network.rst;C:\SPB_Data\open62541\build\doc_src\plugin_accesscontrol.rst;C:\SPB_Data\open62541\build\doc_src\services.rst;C:\SPB_Data\open62541\build\doc_src\nodestore.rst;C:\SPB_Data\open62541\build\doc_src\plugin_pubsub_connection.rst;C:\SPB_Data\open62541\build\doc_src\pubsub.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_datatypes.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_firststeps.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_variable.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_variabletype.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_datasource.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_events.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_alarms_conditions.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_monitoreditems.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_object.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_method.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_client_firststeps.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_pubsub_publish.rst;C:\SPB_Data\open62541\build\doc_src\building.rst;C:\SPB_Data\open62541\build\doc_src\building_arch.rst;C:\SPB_Data\open62541\build\doc_src\index.rst;C:\SPB_Data\open62541\build\doc_src\installing.rst;C:\SPB_Data\open62541\build\doc_src\internal.rst;C:\SPB_Data\open62541\build\doc_src\nodeset_compiler.rst;C:\SPB_Data\open62541\build\doc_src\nodeset_compiler_pump.png;C:\SPB_Data\open62541\build\doc_src\open62541.png;C:\SPB_Data\open62541\build\doc_src\open62541_html.png;C:\SPB_Data\open62541\build\doc_src\protocol.rst;C:\SPB_Data\open62541\build\doc_src\toc.rst;C:\SPB_Data\open62541\build\doc_src\tutorials.rst;C:\SPB_Data\open62541\build\doc_src\ua-wireshark-pubsub.png;C:\SPB_Data\open62541\build\doc_src\ua-wireshark.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc\CMakeFiles\doc_latex</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building LaTeX sources for documentation with Sphinx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+SPHINX_EXECUTABLE-NOTFOUND -b latex C:/SPB_Data/open62541/build/doc_src C:/SPB_Data/open62541/build/doc_latex
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc_src\types.rst;C:\SPB_Data\open62541\build\doc_src\common.rst;C:\SPB_Data\open62541\build\doc_src\util.rst;C:\SPB_Data\open62541\build\doc_src\statuscodes.rst;C:\SPB_Data\open62541\build\doc_src\types_generated.rst;C:\SPB_Data\open62541\build\doc_src\server.rst;C:\SPB_Data\open62541\build\doc_src\client_subscriptions.rst;C:\SPB_Data\open62541\build\doc_src\client.rst;C:\SPB_Data\open62541\build\doc_src\client_highlevel.rst;C:\SPB_Data\open62541\build\doc_src\plugin_log.rst;C:\SPB_Data\open62541\build\doc_src\plugin_network.rst;C:\SPB_Data\open62541\build\doc_src\plugin_accesscontrol.rst;C:\SPB_Data\open62541\build\doc_src\services.rst;C:\SPB_Data\open62541\build\doc_src\nodestore.rst;C:\SPB_Data\open62541\build\doc_src\plugin_pubsub_connection.rst;C:\SPB_Data\open62541\build\doc_src\pubsub.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_datatypes.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_firststeps.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_variable.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_variabletype.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_datasource.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_events.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_alarms_conditions.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_monitoreditems.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_object.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_method.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_client_firststeps.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_pubsub_publish.rst;C:\SPB_Data\open62541\build\doc_src\building.rst;C:\SPB_Data\open62541\build\doc_src\building_arch.rst;C:\SPB_Data\open62541\build\doc_src\index.rst;C:\SPB_Data\open62541\build\doc_src\installing.rst;C:\SPB_Data\open62541\build\doc_src\internal.rst;C:\SPB_Data\open62541\build\doc_src\nodeset_compiler.rst;C:\SPB_Data\open62541\build\doc_src\nodeset_compiler_pump.png;C:\SPB_Data\open62541\build\doc_src\open62541.png;C:\SPB_Data\open62541\build\doc_src\open62541_html.png;C:\SPB_Data\open62541\build\doc_src\protocol.rst;C:\SPB_Data\open62541\build\doc_src\toc.rst;C:\SPB_Data\open62541\build\doc_src\tutorials.rst;C:\SPB_Data\open62541\build\doc_src\ua-wireshark-pubsub.png;C:\SPB_Data\open62541\build\doc_src\ua-wireshark.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc\CMakeFiles\doc_latex</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building LaTeX sources for documentation with Sphinx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+SPHINX_EXECUTABLE-NOTFOUND -b latex C:/SPB_Data/open62541/build/doc_src C:/SPB_Data/open62541/build/doc_latex
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc_src\types.rst;C:\SPB_Data\open62541\build\doc_src\common.rst;C:\SPB_Data\open62541\build\doc_src\util.rst;C:\SPB_Data\open62541\build\doc_src\statuscodes.rst;C:\SPB_Data\open62541\build\doc_src\types_generated.rst;C:\SPB_Data\open62541\build\doc_src\server.rst;C:\SPB_Data\open62541\build\doc_src\client_subscriptions.rst;C:\SPB_Data\open62541\build\doc_src\client.rst;C:\SPB_Data\open62541\build\doc_src\client_highlevel.rst;C:\SPB_Data\open62541\build\doc_src\plugin_log.rst;C:\SPB_Data\open62541\build\doc_src\plugin_network.rst;C:\SPB_Data\open62541\build\doc_src\plugin_accesscontrol.rst;C:\SPB_Data\open62541\build\doc_src\services.rst;C:\SPB_Data\open62541\build\doc_src\nodestore.rst;C:\SPB_Data\open62541\build\doc_src\plugin_pubsub_connection.rst;C:\SPB_Data\open62541\build\doc_src\pubsub.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_datatypes.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_firststeps.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_variable.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_variabletype.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_datasource.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_events.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_alarms_conditions.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_monitoreditems.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_object.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_method.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_client_firststeps.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_pubsub_publish.rst;C:\SPB_Data\open62541\build\doc_src\building.rst;C:\SPB_Data\open62541\build\doc_src\building_arch.rst;C:\SPB_Data\open62541\build\doc_src\index.rst;C:\SPB_Data\open62541\build\doc_src\installing.rst;C:\SPB_Data\open62541\build\doc_src\internal.rst;C:\SPB_Data\open62541\build\doc_src\nodeset_compiler.rst;C:\SPB_Data\open62541\build\doc_src\nodeset_compiler_pump.png;C:\SPB_Data\open62541\build\doc_src\open62541.png;C:\SPB_Data\open62541\build\doc_src\open62541_html.png;C:\SPB_Data\open62541\build\doc_src\protocol.rst;C:\SPB_Data\open62541\build\doc_src\toc.rst;C:\SPB_Data\open62541\build\doc_src\tutorials.rst;C:\SPB_Data\open62541\build\doc_src\ua-wireshark-pubsub.png;C:\SPB_Data\open62541\build\doc_src\ua-wireshark.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc\CMakeFiles\doc_latex</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building LaTeX sources for documentation with Sphinx</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+SPHINX_EXECUTABLE-NOTFOUND -b latex C:/SPB_Data/open62541/build/doc_src C:/SPB_Data/open62541/build/doc_latex
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc_src\types.rst;C:\SPB_Data\open62541\build\doc_src\common.rst;C:\SPB_Data\open62541\build\doc_src\util.rst;C:\SPB_Data\open62541\build\doc_src\statuscodes.rst;C:\SPB_Data\open62541\build\doc_src\types_generated.rst;C:\SPB_Data\open62541\build\doc_src\server.rst;C:\SPB_Data\open62541\build\doc_src\client_subscriptions.rst;C:\SPB_Data\open62541\build\doc_src\client.rst;C:\SPB_Data\open62541\build\doc_src\client_highlevel.rst;C:\SPB_Data\open62541\build\doc_src\plugin_log.rst;C:\SPB_Data\open62541\build\doc_src\plugin_network.rst;C:\SPB_Data\open62541\build\doc_src\plugin_accesscontrol.rst;C:\SPB_Data\open62541\build\doc_src\services.rst;C:\SPB_Data\open62541\build\doc_src\nodestore.rst;C:\SPB_Data\open62541\build\doc_src\plugin_pubsub_connection.rst;C:\SPB_Data\open62541\build\doc_src\pubsub.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_datatypes.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_firststeps.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_variable.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_variabletype.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_datasource.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_events.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_alarms_conditions.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_monitoreditems.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_object.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_server_method.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_client_firststeps.rst;C:\SPB_Data\open62541\build\doc_src\tutorial_pubsub_publish.rst;C:\SPB_Data\open62541\build\doc_src\building.rst;C:\SPB_Data\open62541\build\doc_src\building_arch.rst;C:\SPB_Data\open62541\build\doc_src\index.rst;C:\SPB_Data\open62541\build\doc_src\installing.rst;C:\SPB_Data\open62541\build\doc_src\internal.rst;C:\SPB_Data\open62541\build\doc_src\nodeset_compiler.rst;C:\SPB_Data\open62541\build\doc_src\nodeset_compiler_pump.png;C:\SPB_Data\open62541\build\doc_src\open62541.png;C:\SPB_Data\open62541\build\doc_src\open62541_html.png;C:\SPB_Data\open62541\build\doc_src\protocol.rst;C:\SPB_Data\open62541\build\doc_src\toc.rst;C:\SPB_Data\open62541\build\doc_src\tutorials.rst;C:\SPB_Data\open62541\build\doc_src\ua-wireshark-pubsub.png;C:\SPB_Data\open62541\build\doc_src\ua-wireshark.png;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc\CMakeFiles\doc_latex</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\SPB_Data\open62541\doc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/SPB_Data/open62541/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/SPB_Data/open62541 -BC:/SPB_Data/open62541/build --check-stamp-file C:/SPB_Data/open62541/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\FindLATEX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\SPB_Data\open62541\doc\conf.py;C:\SPB_Data\open62541\tools\cmake\FindSphinx.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\SPB_Data\open62541\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/SPB_Data/open62541/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/SPB_Data/open62541 -BC:/SPB_Data/open62541/build --check-stamp-file C:/SPB_Data/open62541/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\FindLATEX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\SPB_Data\open62541\doc\conf.py;C:\SPB_Data\open62541\tools\cmake\FindSphinx.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\SPB_Data\open62541\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/SPB_Data/open62541/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/SPB_Data/open62541 -BC:/SPB_Data/open62541/build --check-stamp-file C:/SPB_Data/open62541/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\FindLATEX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\SPB_Data\open62541\doc\conf.py;C:\SPB_Data\open62541\tools\cmake\FindSphinx.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\SPB_Data\open62541\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/SPB_Data/open62541/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/SPB_Data/open62541 -BC:/SPB_Data/open62541/build --check-stamp-file C:/SPB_Data/open62541/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.18\Modules\FindLATEX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\SPB_Data\open62541\doc\conf.py;C:\SPB_Data\open62541\tools\cmake\FindSphinx.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\SPB_Data\open62541\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\SPB_Data\open62541\build\doc\CMakeFiles\doc_latex">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\SPB_Data\open62541\build\ZERO_CHECK.vcxproj">
+      <Project>{33951809-BA2D-3999-B360-5B82E40C0CAB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\SPB_Data\open62541\build\open62541.vcxproj">
+      <Project>{BD40CA08-AB42-3302-947C-98609FD921AD}</Project>
+      <Name>open62541</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
